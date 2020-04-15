@@ -11,6 +11,11 @@ This board combines the best features of currently available RC2014 memory board
 
 Plays nicely with the BusRaider.
 
+###Jumper Details
+- The board has three jumpers to select between RAM and ROM in socket U1. These three jumpers should all be set to the RAM or ROM position.
+- One jumper to select between linear and paged addressing. In linear addressing mode the switch to paged mode and back is controllable through software (Z80 code) or with a BusRaider.
+- One jumper to enable the PAGE pull-up resistor. The pull-up is enabled when the jumper is in place and disabled when the jumper is removed. A single pull-up on the PAGE line should be present in your system to use PAGE effectively.
+
 ## License
 
 The MIT License (MIT)
