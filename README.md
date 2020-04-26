@@ -11,11 +11,13 @@ This board combines the best features of currently available RC2014 memory board
 
 Plays nicely with the BusRaider.
 
-###Jumper Details
-- The board has three jumpers to select between RAM and ROM in socket U1. These three jumpers should all be set to the RAM or ROM position.
-- One jumper to select between linear and paged addressing. In linear addressing mode the switch to paged mode and back is controllable through software (Z80 code) or with a BusRaider.
-- One jumper to enable the PAGE pull-up resistor. The pull-up is enabled when the jumper is in place and disabled when the jumper is removed. A single pull-up on the PAGE line should be present in your system to use PAGE effectively.
+### Jumper Details
 
+* It is recommended that you install the PAGE jumper on this board - see note below about the PAGE jumper
+* The Linear/Paged jumper should be set into Paged position if you are using RomWBW and Linear position if using a Z180 with its extended addressing mode. If you are using BusRaider along with this card then you can set the jumper into Linear position as the BusRaider software can control the linear/paged function based on the machine you are emulating.
+* The RAM/ROM jumper should be set into the appropriate position for the chip you are using in socket U1. All three of the RAM/ROM jumpers should be either in the RAM position (when using AS6C4008-55SIN) or ROM position (SST39SF040-70-4C-PHE).
+
+More details of jumpers and IO addresses [are in the documentation](https://github.com/robdobsn/LinearPagedRAMROM1MB/wiki)
 ## License
 
 The MIT License (MIT)
